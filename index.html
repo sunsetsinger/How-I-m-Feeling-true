@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gradient-lib.css" />
+  </head>
+
+  <body class="display-center size-full flex-column margin-0">
+    <header>
+      <h1
+        id="header-1"
+        class="font-gradient floating-animation font-family-header font-medium margin-0 orange-gradient"
+      >
+        Today I'm Feeling...
+      </h1>
+    </header>
+
+    <nav class="display-center flex-column">
+      <h2
+        id="header-2"
+        class="floating-animation margin-0 font-family-header font-medium font-gradient orange-gradient"
+      >
+        Calm
+      </h2>
+
+      <div class="display-center">
+        <a
+          onclick="toggle('Assets/Video/cozy.mp4', '#f9a65a', '#d46b39', 'Cozy');"
+          >cozy</a
+        >
+        <a
+          onclick="toggle('Assets/Video/calm.mp4', '#6a5acd', '#00fa9a', 'Calm');"
+          >calm</a
+        >
+        <a
+          onclick="toggle('Assets/Video/creative.mp4', '#a020f0', '#da70d6', 'Creative');"
+          >creative</a
+        >
+        <a
+          onclick="toggle('Assets/Video/cheerful.mp4', '#ff7f50', '#ffd700', 'Cheerful');"
+          >cheerful</a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <section>
+        <video id="background-video" class="size-full" autoplay muted loop>
+          <source src="Assets/Video/cozy.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section>
+        <div id="icons">
+          <img
+            class="floating-animation"
+            src="Assets/Icon/Instagram.svg"
+            alt="discord icon"
+          />
+          <img
+            class="floating-animation"
+            src="Assets/Icon/Twitch.svg"
+            alt="discord icon"
+          />
+          <img
+            class="floating-animation"
+            src="Assets/Icon/X.svg"
+            alt="discord icon"
+          />
+          <img
+            class="floating-animation"
+            src="Assets/Icon/Discord.svg"
+            alt="discord icon"
+          />
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

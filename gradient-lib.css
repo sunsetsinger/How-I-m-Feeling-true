@@ -1,0 +1,24 @@
+.blue-gradient {
+  background: linear-gradient(135deg, #b8e0e5, #74a3b7);
+}
+
+.orange-gradient {
+  background: linear-gradient(135deg, #f9a65a, #d46b39);
+}
+
+.red-gradient {
+    background: linear-gradient(135deg, #ff0000, #d46b39);
+}
+
+.font-gradient {
+  -webkit-background-clip: text !important; /* The color needs to clip*/
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.white-color {
+
+color: white; 
+
+
+}

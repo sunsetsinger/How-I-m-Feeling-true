@@ -1,0 +1,134 @@
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#icons {
+  bottom: 0; /* Increase this value to raise the icons */
+  right: 0;
+  position: absolute;
+  padding: 10px 20px;
+  display: flex;
+  gap: 40px;
+  height: 25px;
+}
+
+#icons img:nth-child(1) {
+  animation-delay: 0.25s;
+}
+
+#icons img:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+#icons img:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+#icons img:nth-child(4) {
+  animation-delay: 1s;
+}
+
+#icons img {
+  height: 25px; /* Hauteur initiale définie */
+  transition: height 0.25s ease-in-out;
+}
+
+#icons img:hover {
+  height: 30px;
+}
+
+.font-family-header {
+  font-family: "Nothing You Could do";
+}
+
+.font-medium {
+  font-size: 4rem;
+}
+
+/* IPAD SIZE */
+@media screen and (max-width: 600px) {
+  .font-medium {
+    font-size: 3rem;
+  }
+}
+
+/* PHONE SIZE */
+@media screen and (max-width: 410px) {
+  .font-medium {
+    font-size: 2rem;
+  }
+}
+
+.margin-0 {
+  margin: 0; /* controls indentation of h1 & h2 */
+}
+
+/* Controls spacing between h1, h2, & nav */
+
+nav {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  font-family: 'Courier Prime', monospace;
+  color: white;
+  font-weight: 500;
+  opacity: 90%;
+}
+
+/* styling navigation */
+
+nav a {
+  text-decoration: none; /* removes nav lines */
+  color: #fefefe;
+  margin: 0 15px; /* space between nav words */
+  transition: all 0.25s ease-in-out;
+}
+
+nav a:hover {
+  color: white;
+  -webkit-text-stroke: white;
+  font-size: 2rem;
+}
+
+/*FLOATING*/
+
+.floating-animation {
+  animation: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/*keyframes floating*/
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* center top */
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.size-full {
+  height: 100vh;
+  width: 100vw;
+}
