@@ -1,9 +1,22 @@
+
+html {
+
+  scroll-behavior: smooth;
+}
+
+
+body {
+background: #000;
+}
+
+
 #background-video {
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
   z-index: -1;
+  transition: 0.1ms ease;
 }
 
 #icons {
@@ -144,7 +157,41 @@ nav a:hover {
   background-color: black;
 }
 
-/* Second Page*/
+.size-card { 
+  width: 30vw;
+  height: 35vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.w-80pr {
+  width: 65vw;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
 
 
+.gap-20 {
+  gap: 20px
+}
 
+.gap-50 {
+  gap: 50px
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+
+.text-right {
+  text-align: right;
+}
+
+.margin-10 {
+  margin: 10px;
+}
